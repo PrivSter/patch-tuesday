@@ -101,9 +101,16 @@ def main(argv=None) -> int:
     if not a.offline:
         from . import fetch
         prods = {r["cve"]: fetch.affected_products(r["cve"]) for r in s["P1"] + s["P2"]}
-        keep = ("productName", "kbArticles", "fixedBuildNumber", "severity", "releaseNumber")
-        (out / "products.json").write_text(json.dumps(
-            {c: [{k: p.get(k) for k in keep} for p in v] for c, v in prods.items()}, indent=1))
+        # The feed's field names are "product" and "productFamily" (not "productName").
+        keep = ("product", "productFamily", "productStatus", "severity", "releaseNumber")
+        kb_keep = ("articleName", "fixedBuildNumber", "rebootRequired")
+        slimmed = {c: [dict({k: p.get(k) for k in keep},
+                            kbArticles=[{k: a.get(k) for k in kb_keep} for a in (p.get("kbArticles") or [])])
+                       for p in v] for c, v in prods.items()}
+        unnamed = [c for c, v in slimmed.items() for p in v if not p["product"]]
+        if unnamed:
+            print(f"warning: affectedProduct rows with no product name: {sorted(set(unnamed))}", file=sys.stderr)
+        (out / "products.json").write_text(json.dumps(slimmed, indent=1))
     (out / "summary.json").write_text(json.dumps(s, indent=1))
     with open(out / "bands.csv", "w", newline="") as f:
         w = csv.writer(f)
