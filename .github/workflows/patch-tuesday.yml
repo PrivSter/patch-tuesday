@@ -1,0 +1,52 @@
+name: patch-tuesday-data
+# Collects Microsoft's release data on Patch Tuesday (second Tuesday) and again
+# a week later, and commits it under data/<YYYY-Mon>/. Cron can't say "second
+# Tuesday", so it runs daily on days 8-21 and the first step checks the weekday.
+on:
+  schedule:
+    - cron: "15 19 8-21 * *"   # 19:15 UTC, after Microsoft's 17:00 UTC release
+    - cron: "15 21 8-21 * *"   # retry in case the feed was late
+  workflow_dispatch:
+    inputs:
+      month: { description: "YYYY-Mon (blank = current month)", required: false }
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Only on a Tuesday (or when run by hand)
+        id: gate
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$(date -u +%u)" = "2" ]; then
+            echo "go=1" >> "$GITHUB_OUTPUT"
+            M="${{ github.event.inputs.month }}"; [ -z "$M" ] && M="$(date -u +%Y-%b)"
+            echo "month=$M" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.go == '1'
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.go == '1'
+        with: { python-version: "3.12" }
+      - name: Tests must pass before any data is written
+        if: steps.gate.outputs.go == '1'
+        run: pip install pytest && python -m pytest -q
+      - name: Collect
+        if: steps.gate.outputs.go == '1'
+        id: collect
+        run: |
+          set +e
+          python -m pt.cli --month "${{ steps.gate.outputs.month }}"
+          rc=$?
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
+          [ $rc -eq 3 ] && { echo "Release not published yet"; exit 0; }
+          exit $rc
+      - name: Commit
+        if: steps.gate.outputs.go == '1' && steps.collect.outputs.rc == '0'
+        run: |
+          git config user.name "patch-tuesday-bot"
+          git config user.email "patch-tuesday-bot@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && { echo "No change"; exit 0; }
+          git commit -m "data: ${{ steps.gate.outputs.month }} $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
