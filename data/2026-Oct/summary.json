@@ -1,0 +1,1546 @@
+{
+ "month": "2026-Oct",
+ "release": "2026-10-13T14:00:00+00:00",
+ "release_uk": "Tue 13 Oct 2026, 15:00 BST",
+ "deadlines": {
+  "P1": {
+   "utc": "2026-10-15T14:00:00+00:00",
+   "uk": "Thu 15 Oct 2026, 15:00 BST"
+  },
+  "P1_internet": {
+   "utc": "2026-10-14T14:00:00+00:00",
+   "uk": "Wed 14 Oct 2026, 15:00 BST"
+  },
+  "P2": {
+   "utc": "2026-10-20T14:00:00+00:00",
+   "uk": "Tue 20 Oct 2026, 15:00 BST"
+  },
+  "P2_internet": {
+   "utc": "2026-10-18T14:00:00+00:00",
+   "uk": "Sun 18 Oct 2026, 15:00 BST"
+  },
+  "P3": {
+   "utc": "2026-10-27T14:00:00+00:00",
+   "uk": "Tue 27 Oct 2026, 14:00 GMT"
+  },
+  "P4": {
+   "utc": "2026-10-27T14:00:00+00:00",
+   "uk": "Tue 27 Oct 2026, 14:00 GMT"
+  },
+  "cyber_essentials": {
+   "utc": "2026-10-27T14:00:00+00:00",
+   "uk": "Tue 27 Oct 2026, 14:00 GMT"
+  }
+ },
+ "counts": {
+  "all": 1907,
+  "microsoft": 1416,
+  "microsoft_install_needed": 1409,
+  "chrome": 0,
+  "other_organisations": 491,
+  "customer_action": 1900,
+  "critical_customer_action": 79,
+  "zero_days": 1,
+  "publicly_disclosed": 2,
+  "kev_listed": 0,
+  "P1": 1,
+  "P2": 20,
+  "P3": 61,
+  "P4": 1818,
+  "P4_by_severity": {
+   "Important": 1328,
+   "Moderate": 1,
+   "unrated": 489
+  },
+  "P3_preauth_high_complexity": 13
+ },
+ "P1": [
+  {
+   "cve": "CVE-2026-96951",
+   "title": "Windows Shell Security Feature Bypass Vulnerability",
+   "component": "Windows Shell",
+   "severity": "Important",
+   "impact": "Security Feature Bypass",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C",
+   "exploited": "Yes",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Detected",
+   "cwe": [
+    "CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  }
+ ],
+ "P2": [
+  {
+   "cve": "CVE-2026-100202",
+   "title": "Windows Message Queuing Queue Manager Remote Code Execution Vulnerability",
+   "component": "Windows Message Queuing Queue Manager",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "9.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-100219",
+   "title": "Microsoft QUIC Remote Code Execution Vulnerability",
+   "component": "Microsoft QUIC",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "9.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-105016",
+   "title": "Microsoft QUIC Remote Code Execution Vulnerability",
+   "component": "Microsoft QUIC",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "9.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-21413",
+   "title": "Raw Image Extension Remote Code Execution Vulnerability",
+   "component": "Windows Raw Image Extension",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "9.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Cisco Talos",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-70147",
+   "title": "Microsoft PostScript Printer Driver Remote Code Execution Vulnerability",
+   "component": "Microsoft PostScript Printer Driver",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "9.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-70153",
+   "title": "Microsoft PostScript Printer Driver Remote Code Execution Vulnerability",
+   "component": "Microsoft PostScript Printer Driver",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "9.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-70242",
+   "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Outlook",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "9.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-70291",
+   "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Outlook",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "9.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-70300",
+   "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Word",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "9.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-822: Untrusted Pointer Dereference"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-88156",
+   "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Outlook",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "9.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-121: Stack-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-88178",
+   "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+   "component": "Microsoft Office PowerPoint",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "9.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-96934",
+   "title": "Windows DHCP Server Remote Code Execution Vulnerability",
+   "component": "Windows DHCP Server",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "9.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97016",
+   "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Outlook",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "9.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97749",
+   "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Outlook",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "9.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-415: Double Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97814",
+   "title": "Windows Text Shaping Remote Code Execution Vulnerability",
+   "component": "Windows Text Shaping",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "9.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-108398",
+   "title": ".NET Framework Security Feature Bypass Vulnerability",
+   "component": ".NET Framework",
+   "severity": "Important",
+   "impact": "Security Feature Bypass",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "Yes",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-426: Untrusted Search Path"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-70229",
+   "title": "Windows Active Directory Domain Services Remote Code Execution Vulnerability",
+   "component": "Active Directory Domain Services",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.1",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation More Likely",
+   "cwe": [
+    "CWE-863: Incorrect Authorization"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-70571",
+   "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+   "component": "Microsoft Exchange Server",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.1",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation More Likely",
+   "cwe": [
+    "CWE-121: Stack-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-108131",
+   "title": "Active Directory Federation Services (AD FS) Spoofing Vulnerability",
+   "component": "Active Directory Federation Services (AD FS)",
+   "severity": "Critical",
+   "impact": "Spoofing",
+   "baseScore": "7.5",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-92707",
+   "title": "MessagePack-CSharp Denial of Service Vulnerability",
+   "component": ".NET",
+   "severity": "Moderate",
+   "impact": "Denial of Service",
+   "baseScore": "5.3",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+   "exploited": "No",
+   "publiclyDisclosed": "Yes",
+   "exploitability": null,
+   "cwe": [
+    "CWE-1325: Improperly Controlled Sequential Memory Allocation"
+   ],
+   "issuingCna": "GitHub_M",
+   "kev": null
+  }
+ ],
+ "P3": [
+  {
+   "cve": "CVE-2026-100209",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-100210",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-100211",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-100220",
+   "title": "Windows Media Video Decoder Remote Code Execution Vulnerability",
+   "component": "Windows Media Video Decoder",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-102214",
+   "title": "Windows Hyper-V Remote Code Execution Vulnerability",
+   "component": "Windows Hyper-V",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-102225",
+   "title": "Windows Text Shaping Remote Code Execution Vulnerability",
+   "component": "Windows Text Shaping",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-125: Out-of-bounds Read",
+    "CWE-197: Numeric Truncation Error"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-102855",
+   "title": "Microsoft Office Visio Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Visio",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-102856",
+   "title": "Microsoft Office Visio Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Visio",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow",
+    "CWE-190: Integer Overflow or Wraparound"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-102857",
+   "title": "Microsoft Office Visio Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Visio",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow",
+    "CWE-193: Off-by-one Error"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-105718",
+   "title": "Microsoft Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-125: Out-of-bounds Read",
+    "CWE-20: Improper Input Validation"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-105733",
+   "title": "Windows Hyper-V Remote Code Execution Vulnerability",
+   "component": "Windows Hyper-V",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-1419: Incorrect Initialization of Resource"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-108400",
+   "title": "HEVC Video Extensions Remote Code Execution Vulnerability",
+   "component": "Microsoft Windows Codecs Library",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-190: Integer Overflow or Wraparound"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-108467",
+   "title": "Microsoft PostScript Printer Driver Remote Code Execution Vulnerability",
+   "component": "Microsoft PostScript Printer Driver",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-108471",
+   "title": "Windows Virtualization-Based Security (VBS) Enclave Elevation of Privilege Vulnerability",
+   "component": "Windows Virtualization-Based Security (VBS) Enclave",
+   "severity": "Critical",
+   "impact": "Elevation of Privilege",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-822: Untrusted Pointer Dereference"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-70215",
+   "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+   "component": "Microsoft Office PowerPoint",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-70250",
+   "title": "Windows DHCP Client Remote Code Execution Vulnerability",
+   "component": "Windows DHCP Client",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free",
+    "CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-83934",
+   "title": "Windows GDI+ Remote Code Execution Vulnerability",
+   "component": "Windows GDI+",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-121: Stack-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-88073",
+   "title": "Windows Graphics Kernel Elevation of Privilege Vulnerability",
+   "component": "Windows Graphics Kernel",
+   "severity": "Critical",
+   "impact": "Elevation of Privilege",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-88144",
+   "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+   "component": "Microsoft Office PowerPoint",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-96202",
+   "title": "Windows Raw Image Extension Remote Code Execution Vulnerability",
+   "component": "Windows Raw Image Extension",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-96913",
+   "title": "Windows Kernel Elevation of Privilege Vulnerability",
+   "component": "Windows Kernel",
+   "severity": "Critical",
+   "impact": "Elevation of Privilege",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-96914",
+   "title": "Windows Virtualization-Based Security (VBS) Enclave Elevation of Privilege Vulnerability",
+   "component": "Windows Virtualization-Based Security (VBS) Enclave",
+   "severity": "Critical",
+   "impact": "Elevation of Privilege",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-190: Integer Overflow or Wraparound",
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-96943",
+   "title": "Windows Raw Image Extension Remote Code Execution Vulnerability",
+   "component": "Windows Raw Image Extension",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-190: Integer Overflow or Wraparound",
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-96952",
+   "title": "Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
+   "component": "Microsoft Windows Media Foundation",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97739",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-191: Integer Underflow (Wrap or Wraparound)",
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97741",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow",
+    "CWE-193: Off-by-one Error"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97742",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-121: Stack-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97745",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97753",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow",
+    "CWE-190: Integer Overflow or Wraparound"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97755",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-125: Out-of-bounds Read"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97756",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97758",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97759",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97761",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-121: Stack-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97765",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97767",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-415: Double Free",
+    "CWE-476: NULL Pointer Dereference"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97776",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97778",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-190: Integer Overflow or Wraparound"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-97780",
+   "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Excel",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-102866",
+   "title": "Microsoft Office SharePoint Elevation of Privilege Vulnerability",
+   "component": "Microsoft Office SharePoint",
+   "severity": "Critical",
+   "impact": "Elevation of Privilege",
+   "baseScore": "8.1",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-347: Improper Verification of Cryptographic Signature"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-108457",
+   "title": "Microsoft Windows PDF Remote Code Execution Vulnerability",
+   "component": "Microsoft Windows PDF",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.1",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-787: Out-of-bounds Write"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-108460",
+   "title": "Windows Message Queuing Remote Code Execution Vulnerability",
+   "component": "Windows Message Queuing",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.1",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-69802",
+   "title": "Network Device Enrollment Service (NDES) Remote Code Execution Vulnerability",
+   "component": "Network Device Enrollment Service (NDES)",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.1",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-1390: Weak Authentication"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-70187",
+   "title": "Windows Remote Desktop Services Remote Code Execution Vulnerability",
+   "component": "Remote Desktop Gateway Service",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.1",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-70269",
+   "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Word",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.1",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow",
+    "CWE-190: Integer Overflow or Wraparound"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-88117",
+   "title": "Windows DHCP Server Remote Code Execution Vulnerability",
+   "component": "Windows DHCP Server",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.1",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-88119",
+   "title": "Windows DHCP Server Remote Code Execution Vulnerability",
+   "component": "Windows DHCP Server",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.1",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-88120",
+   "title": "Windows DHCP Server Remote Code Execution Vulnerability",
+   "component": "Windows DHCP Server",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.1",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-88171",
+   "title": "Windows DHCP Server Remote Code Execution Vulnerability",
+   "component": "Windows DHCP Server",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.1",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-415: Double Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-88174",
+   "title": "Windows Deployment Services Remote Code Execution Vulnerability",
+   "component": "Windows Deployment Services",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.1",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Unlikely",
+   "cwe": [
+    "CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-88185",
+   "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Word",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.1",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Unlikely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-100215",
+   "title": "Microsoft Graphics Component Remote Code Execution Vulnerability",
+   "component": "Microsoft Graphics Component",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "7.8",
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-108130",
+   "title": "Windows Virtualization-Based Security (VBS) Enclave Elevation of Privilege Vulnerability",
+   "component": "Windows Virtualization-Based Security (VBS) Enclave",
+   "severity": "Critical",
+   "impact": "Elevation of Privilege",
+   "baseScore": "7.8",
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-88074",
+   "title": "Windows Virtualization-Based Security (VBS) Enclave Elevation of Privilege Vulnerability",
+   "component": "Windows Virtualization-Based Security (VBS) Enclave",
+   "severity": "Critical",
+   "impact": "Elevation of Privilege",
+   "baseScore": "7.8",
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-190: Integer Overflow or Wraparound"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-69789",
+   "title": "Windows Reliable Multicast Transport Driver (RMCAST) Remote Code Execution Vulnerability",
+   "component": "Reliable Multicast Transport Driver (RMCAST)",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "7.5",
+   "vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Unlikely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-88207",
+   "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+   "component": "Microsoft Office PowerPoint",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "7.5",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-96222",
+   "title": "Active Directory Federation Services (AD FS) Spoofing Vulnerability",
+   "component": "Active Directory Federation Services (AD FS)",
+   "severity": "Critical",
+   "impact": "Spoofing",
+   "baseScore": "7.4",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-295: Improper Certificate Validation"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-108399",
+   "title": "Windows Hyper-V Elevation of Privilege Vulnerability",
+   "component": "Windows Hyper-V",
+   "severity": "Critical",
+   "impact": "Elevation of Privilege",
+   "baseScore": "7.2",
+   "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-102211",
+   "title": "Windows Virtualization-Based Security (VBS) Enclave Elevation of Privilege Vulnerability",
+   "component": "Windows Virtualization-Based Security (VBS) Enclave",
+   "severity": "Critical",
+   "impact": "Elevation of Privilege",
+   "baseScore": "7.0",
+   "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free",
+    "CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-62840",
+   "title": "Linux Kernel Elevation of Privilege Vulnerability",
+   "component": "Linux Kernel",
+   "severity": "Critical",
+   "impact": "Elevation of Privilege",
+   "baseScore": "7.0",
+   "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-367: Time-of-check Time-of-use (TOCTOU) Race Condition"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-83917",
+   "title": "Windows ALPC Elevation of Privilege Vulnerability",
+   "component": "Windows ALPC",
+   "severity": "Critical",
+   "impact": "Elevation of Privilege",
+   "baseScore": "7.0",
+   "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-416: Use After Free"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  }
+ ],
+ "disclosed": [
+  "CVE-2026-108398",
+  "CVE-2026-92707"
+ ],
+ "exploited": [
+  "CVE-2026-96951"
+ ],
+ "carryover": [
+  {
+   "cve": "CVE-2026-65660",
+   "title": "Microsoft SharePoint Server Remote Code Execution Vulnerability",
+   "release": "2026-Aug",
+   "baseScore": "8.8",
+   "microsoft_exploited": "No",
+   "kev_added": "2026-09-25",
+   "kev_due": "2026-09-28",
+   "ransomware": "Unknown",
+   "cyber_essentials_due": "2026-08-25T14:00:00+00:00",
+   "overdue": true
+  },
+  {
+   "cve": "CVE-2026-81963",
+   "title": "Windows Update Stack Elevation of Privilege Vulnerability",
+   "release": "2026-Sep",
+   "baseScore": "7.8",
+   "microsoft_exploited": "Yes",
+   "kev_added": "2026-09-08",
+   "kev_due": "2026-09-22",
+   "ransomware": "Unknown",
+   "cyber_essentials_due": "2026-09-22T14:00:00+00:00",
+   "overdue": true
+  },
+  {
+   "cve": "CVE-2026-85880",
+   "title": "Windows Advanced Local Procedure Call (ALPC) Elevation of Privilege Vulnerability",
+   "release": "2026-Sep",
+   "baseScore": "7.8",
+   "microsoft_exploited": "Yes",
+   "kev_added": "2026-09-08",
+   "kev_due": "2026-09-22",
+   "ransomware": "Unknown",
+   "cyber_essentials_due": "2026-09-22T14:00:00+00:00",
+   "overdue": true
+  }
+ ],
+ "flags": [
+  {
+   "cve": "CVE-2026-87713",
+   "flag": "title says 'Remote Code Execution' but impact is 'Elevation of Privilege'"
+  },
+  {
+   "cve": "CVE-2026-108131",
+   "flag": "Critical with no CWE"
+  },
+  {
+   "cve": null,
+   "flag": "no Chrome-issued (Edge) records in this release"
+  },
+  {
+   "cve": "CVE-2026-65660",
+   "flag": "in CISA KEV but Microsoft exploited flag is No (earlier release)"
+  }
+ ],
+ "checks": {
+  "bands_disjoint": true,
+  "criticals_accounted": true,
+  "action_accounted": true,
+  "p4_breakdown_sums": true,
+  "split_sums": true,
+  "every_cve_is_microsoft_record": true
+ },
+ "ok": true,
+ "generated": "2026-10-13T21:54:43+00:00",
+ "kev_catalog": {
+  "version": "2026.10.13",
+  "released": "2026-10-13T16:36:26.1679Z"
+ },
+ "previous_release": "2026-09-08T17:00:00+00:00"
+}
