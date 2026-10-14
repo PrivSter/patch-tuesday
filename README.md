@@ -7,7 +7,8 @@ with Microsoft's fields unchanged. CISA KEV only adds labels and carry-overs.
 - `pt/triage.py`: bands, deadlines, data-quality flags and self-checks (pure functions)
 - `pt/fetch.py`: Microsoft Update Guide feed and CISA KEV (stdlib only, no keys)
 - `pt/cli.py`: `python -m pt.cli --month 2026-Nov` writes `data/<month>/`
-- `tests/`: October 2026 known-answer test (1,409 headline; P1/P2/P3/P4 1/20/61/1,818)
+- `tests/`: October 2026 known-answer test (1,409 headline; P1/P2/P3/P4 1/20/61/1,818) and report-loop tests
+- `report/`: the monthly report's closed loop (below)
 
 ## Bands (UK first, counted from Microsoft's release time)
 
@@ -36,3 +37,23 @@ must not be published from data with `"ok": false`.
 
 To change a rule, edit `pt/triage.py`, update the expected values in the test with
 a reason, and push. The tests must pass before data is collected.
+
+## The report loop (`report/`)
+
+The monthly report is built as a closed loop, like the InfoSec Daily Brief V2:
+one agent writes, two separate checker agents verify, and a script decides what is printed.
+
+| File | Job |
+|---|---|
+| `facts.py` | Builds `facts.json` from `data/<month>/` plus a fresh KEV: every number, list, table and deadline on the page. Re-checks each P1 against Microsoft's live record. Exit 5 if fresh KEV moves a CVE into P1. |
+| `playbook.md` | What the scheduled run follows: the writer's brief, the claims format and the loop. |
+| `checker-source.md` | Brief for the agent that checks each news claim against the exact words on its page. |
+| `checker-coverage.md` | Brief for the agent that checks the printed wording says no more than the checked claims. |
+| `gate.py` | `prepare` / `status` / `final`. Matches every figure the writer cites to `facts.json` by script, tracks verdicts by text hash, caps the loop at three rounds, and applies the split rule. |
+| `render.py`, `page.css` | Build the page from the gate's `report.json`; nothing on the page is typed by hand. |
+| `topdf.js` | A4 landscape PDF of the page. |
+
+**Split rule:** CVEs, bands, scores and deadlines come from Microsoft's data and are never
+dropped. Narrative that still fails after three rounds is replaced (mechanical bottom line,
+"not verified" cells, "no verified credit") or dropped (notes, findings), and listed in the
+report's Verification notes.
