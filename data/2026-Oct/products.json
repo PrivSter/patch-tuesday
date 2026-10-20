@@ -79,7 +79,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -317,7 +317,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -331,7 +331,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -473,7 +473,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -725,7 +725,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -739,7 +739,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -1176,7 +1176,7 @@
    "releaseNumber": "2026-Oct",
    "kbArticles": [
     {
-     "articleName": "Release Notes",
+     "articleName": "5130034",
      "fixedBuildNumber": "8.0.32",
      "rebootRequired": "Yes"
     }
@@ -1190,7 +1190,7 @@
    "releaseNumber": "2026-Oct",
    "kbArticles": [
     {
-     "articleName": "Release Notes",
+     "articleName": "5130035",
      "fixedBuildNumber": "9.0.21",
      "rebootRequired": "Yes"
     }
@@ -1867,7 +1867,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -1895,7 +1895,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -1909,7 +1909,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -2331,7 +2331,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -2387,7 +2387,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -2429,7 +2429,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -2721,13 +2721,13 @@
   {
    "product": "Microsoft Office 365 for Mac",
    "productFamily": "Microsoft Office",
-   "productStatus": "known_affected",
+   "productStatus": "fixed",
    "severity": "Critical",
    "releaseNumber": "2026-Oct",
    "kbArticles": [
     {
      "articleName": "Release Notes",
-     "fixedBuildNumber": null,
+     "fixedBuildNumber": "16.114.26101123",
      "rebootRequired": null
     }
    ]
@@ -2791,13 +2791,13 @@
   {
    "product": "Microsoft Office LTSC for Mac 2024",
    "productFamily": "Microsoft Office",
-   "productStatus": "known_affected",
+   "productStatus": "fixed",
    "severity": "Critical",
    "releaseNumber": "2026-Oct",
    "kbArticles": [
     {
      "articleName": "Release Notes",
-     "fixedBuildNumber": null,
+     "fixedBuildNumber": "16.114.26101123",
      "rebootRequired": null
     }
    ]
@@ -2805,13 +2805,13 @@
   {
    "product": "Microsoft Office LTSC for Mac 2021",
    "productFamily": "Microsoft Office",
-   "productStatus": "known_affected",
+   "productStatus": "fixed",
    "severity": "Critical",
    "releaseNumber": "2026-Oct",
    "kbArticles": [
     {
      "articleName": "Release Notes",
-     "fixedBuildNumber": null,
+     "fixedBuildNumber": "16.114.26101123",
      "rebootRequired": null
     }
    ]
@@ -2822,7 +2822,7 @@
    "product": "Microsoft 365 Apps for Enterprise for 64-bit Systems",
    "productFamily": "Microsoft Office",
    "productStatus": "fixed",
-   "severity": "Important",
+   "severity": "Critical",
    "releaseNumber": "2026-Oct",
    "kbArticles": [
     {
@@ -2836,7 +2836,7 @@
    "product": "Microsoft Office LTSC 2024 for 32-bit editions",
    "productFamily": "Microsoft Office",
    "productStatus": "fixed",
-   "severity": "Important",
+   "severity": "Critical",
    "releaseNumber": "2026-Oct",
    "kbArticles": [
     {
@@ -2850,7 +2850,7 @@
    "product": "Microsoft Office LTSC 2024 for 64-bit editions",
    "productFamily": "Microsoft Office",
    "productStatus": "fixed",
-   "severity": "Important",
+   "severity": "Critical",
    "releaseNumber": "2026-Oct",
    "kbArticles": [
     {
@@ -2864,7 +2864,7 @@
    "product": "Microsoft Office LTSC 2021 for 32-bit editions",
    "productFamily": "Microsoft Office",
    "productStatus": "fixed",
-   "severity": "Important",
+   "severity": "Critical",
    "releaseNumber": "2026-Oct",
    "kbArticles": [
     {
@@ -2878,7 +2878,7 @@
    "product": "Microsoft Office LTSC 2021 for 64-bit editions",
    "productFamily": "Microsoft Office",
    "productStatus": "fixed",
-   "severity": "Important",
+   "severity": "Critical",
    "releaseNumber": "2026-Oct",
    "kbArticles": [
     {
@@ -2892,7 +2892,7 @@
    "product": "Microsoft 365 Apps for Enterprise for 32-bit Systems",
    "productFamily": "Microsoft Office",
    "productStatus": "fixed",
-   "severity": "Important",
+   "severity": "Critical",
    "releaseNumber": "2026-Oct",
    "kbArticles": [
     {
@@ -2921,13 +2921,13 @@
   {
    "product": "Microsoft Office LTSC for Mac 2024",
    "productFamily": "Microsoft Office",
-   "productStatus": "known_affected",
-   "severity": null,
+   "productStatus": "fixed",
+   "severity": "Critical",
    "releaseNumber": "2026-Oct",
    "kbArticles": [
     {
      "articleName": "Release Notes",
-     "fixedBuildNumber": null,
+     "fixedBuildNumber": "16.114.26101123",
      "rebootRequired": null
     }
    ]
@@ -2963,13 +2963,13 @@
   {
    "product": "Microsoft Office LTSC for Mac 2021",
    "productFamily": "Microsoft Office",
-   "productStatus": "known_affected",
-   "severity": null,
+   "productStatus": "fixed",
+   "severity": "Critical",
    "releaseNumber": "2026-Oct",
    "kbArticles": [
     {
      "articleName": "Release Notes",
-     "fixedBuildNumber": null,
+     "fixedBuildNumber": "16.114.26101123",
      "rebootRequired": null
     }
    ]
@@ -3019,13 +3019,13 @@
   {
    "product": "Microsoft Office 365 for Mac",
    "productFamily": "Microsoft Office",
-   "productStatus": "known_affected",
+   "productStatus": "fixed",
    "severity": "Critical",
    "releaseNumber": "2026-Oct",
    "kbArticles": [
     {
      "articleName": "Release Notes",
-     "fixedBuildNumber": null,
+     "fixedBuildNumber": "16.114.26101123",
      "rebootRequired": null
     }
    ]
@@ -3049,13 +3049,13 @@
   {
    "product": "Microsoft Office 365 for Mac",
    "productFamily": "Microsoft Office",
-   "productStatus": "known_affected",
+   "productStatus": "fixed",
    "severity": "Critical",
    "releaseNumber": "2026-Oct",
    "kbArticles": [
     {
      "articleName": "Release Notes",
-     "fixedBuildNumber": null,
+     "fixedBuildNumber": "16.114.26101123",
      "rebootRequired": null
     }
    ]
@@ -3077,13 +3077,13 @@
   {
    "product": "Microsoft Office LTSC for Mac 2021",
    "productFamily": "Microsoft Office",
-   "productStatus": "known_affected",
+   "productStatus": "fixed",
    "severity": "Critical",
    "releaseNumber": "2026-Oct",
    "kbArticles": [
     {
      "articleName": "Release Notes",
-     "fixedBuildNumber": null,
+     "fixedBuildNumber": "16.114.26101123",
      "rebootRequired": null
     }
    ]
@@ -3147,13 +3147,13 @@
   {
    "product": "Microsoft Office LTSC for Mac 2024",
    "productFamily": "Microsoft Office",
-   "productStatus": "known_affected",
+   "productStatus": "fixed",
    "severity": "Critical",
    "releaseNumber": "2026-Oct",
    "kbArticles": [
     {
      "articleName": "Release Notes",
-     "fixedBuildNumber": null,
+     "fixedBuildNumber": "16.114.26101123",
      "rebootRequired": null
     }
    ]
@@ -3581,7 +3581,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -3945,7 +3945,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -3959,7 +3959,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -4467,7 +4467,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -4481,7 +4481,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -4677,7 +4677,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -5045,7 +5045,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -5073,7 +5073,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]
@@ -5087,7 +5087,7 @@
    "kbArticles": [
     {
      "articleName": "5126657",
-     "fixedBuildNumber": "10.0.19044.7807",
+     "fixedBuildNumber": "10.0.19045.7807",
      "rebootRequired": "Yes"
     }
    ]

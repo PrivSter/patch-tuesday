@@ -1,5 +1,5 @@
 band,cve,component,severity,impact,baseScore,vector,exploited,publiclyDisclosed,exploitability,kev_added,due_uk
-P1,CVE-2026-96951,Windows Shell,Important,Security Feature Bypass,8.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C,Yes,No,Exploitation Detected,,"Thu 15 Oct 2026, 15:00 BST"
+P1,CVE-2026-96951,Windows Shell,Important,Security Feature Bypass,8.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C,Yes,No,Exploitation Detected,2026-10-13,"Thu 15 Oct 2026, 15:00 BST"
 P2,CVE-2026-100202,Windows Message Queuing Queue Manager,Critical,Remote Code Execution,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,No,No,Exploitation Less Likely,,"Tue 20 Oct 2026, 15:00 BST"
 P2,CVE-2026-100219,Microsoft QUIC,Critical,Remote Code Execution,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,No,No,Exploitation Less Likely,,"Tue 20 Oct 2026, 15:00 BST"
 P2,CVE-2026-105016,Microsoft QUIC,Critical,Remote Code Execution,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,No,No,Exploitation Less Likely,,"Tue 20 Oct 2026, 15:00 BST"
@@ -32,6 +32,8 @@ P3,CVE-2026-102857,Microsoft Office Visio,Critical,Remote Code Execution,8.8,CVS
 P3,CVE-2026-105718,Microsoft Office Excel,Critical,Remote Code Execution,8.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,No,No,Exploitation Less Likely,,"Tue 27 Oct 2026, 14:00 GMT"
 P3,CVE-2026-105733,Windows Hyper-V,Critical,Remote Code Execution,8.8,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C,No,No,Exploitation Less Likely,,"Tue 27 Oct 2026, 14:00 GMT"
 P3,CVE-2026-108400,Microsoft Windows Codecs Library,Critical,Remote Code Execution,8.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,No,No,Exploitation Less Likely,,"Tue 27 Oct 2026, 14:00 GMT"
+P3,CVE-2026-108439,Microsoft Office Word,Critical,Remote Code Execution,8.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,No,No,Exploitation Less Likely,,"Tue 27 Oct 2026, 14:00 GMT"
+P3,CVE-2026-108440,Microsoft Office Word,Critical,Remote Code Execution,8.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,No,No,Exploitation Less Likely,,"Tue 27 Oct 2026, 14:00 GMT"
 P3,CVE-2026-108467,Microsoft PostScript Printer Driver,Critical,Remote Code Execution,8.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,No,No,Exploitation Less Likely,,"Tue 27 Oct 2026, 14:00 GMT"
 P3,CVE-2026-108471,Windows Virtualization-Based Security (VBS) Enclave,Critical,Elevation of Privilege,8.8,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C,No,No,Exploitation Less Likely,,"Tue 27 Oct 2026, 14:00 GMT"
 P3,CVE-2026-70215,Microsoft Office PowerPoint,Critical,Remote Code Execution,8.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,No,No,Exploitation Less Likely,,"Tue 27 Oct 2026, 14:00 GMT"
@@ -74,6 +76,7 @@ P3,CVE-2026-88185,Microsoft Office Word,Critical,Remote Code Execution,8.1,CVSS:
 P3,CVE-2026-100215,Microsoft Graphics Component,Critical,Remote Code Execution,7.8,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,No,No,Exploitation Less Likely,,"Tue 27 Oct 2026, 14:00 GMT"
 P3,CVE-2026-108130,Windows Virtualization-Based Security (VBS) Enclave,Critical,Elevation of Privilege,7.8,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,No,No,Exploitation Less Likely,,"Tue 27 Oct 2026, 14:00 GMT"
 P3,CVE-2026-88074,Windows Virtualization-Based Security (VBS) Enclave,Critical,Elevation of Privilege,7.8,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,No,No,Exploitation Less Likely,,"Tue 27 Oct 2026, 14:00 GMT"
+P3,CVE-2026-108448,Microsoft Office Outlook,Critical,Remote Code Execution,7.5,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,No,No,Exploitation Less Likely,,"Tue 27 Oct 2026, 14:00 GMT"
 P3,CVE-2026-69789,Reliable Multicast Transport Driver (RMCAST),Critical,Remote Code Execution,7.5,CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,No,No,Exploitation Unlikely,,"Tue 27 Oct 2026, 14:00 GMT"
 P3,CVE-2026-88207,Microsoft Office PowerPoint,Critical,Remote Code Execution,7.5,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,No,No,Exploitation Less Likely,,"Tue 27 Oct 2026, 14:00 GMT"
 P3,CVE-2026-96222,Active Directory Federation Services (AD FS),Critical,Spoofing,7.4,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C,No,No,Exploitation Less Likely,,"Tue 27 Oct 2026, 14:00 GMT"

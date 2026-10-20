@@ -33,24 +33,24 @@
   }
  },
  "counts": {
-  "all": 1907,
-  "microsoft": 1416,
-  "microsoft_install_needed": 1409,
-  "chrome": 0,
-  "other_organisations": 491,
-  "customer_action": 1900,
-  "critical_customer_action": 79,
+  "all": 2287,
+  "microsoft": 1454,
+  "microsoft_install_needed": 1447,
+  "chrome": 249,
+  "other_organisations": 584,
+  "customer_action": 2280,
+  "critical_customer_action": 82,
   "zero_days": 1,
   "publicly_disclosed": 2,
-  "kev_listed": 0,
+  "kev_listed": 1,
   "P1": 1,
   "P2": 20,
-  "P3": 61,
-  "P4": 1818,
+  "P3": 64,
+  "P4": 2195,
   "P4_by_severity": {
-   "Important": 1328,
+   "Important": 1363,
    "Moderate": 1,
-   "unrated": 489
+   "unrated": 831
   },
   "P3_preauth_high_complexity": 13
  },
@@ -70,7 +70,11 @@
     "CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"
    ],
    "issuingCna": "Microsoft",
-   "kev": null
+   "kev": {
+    "dateAdded": "2026-10-13",
+    "dueDate": "2026-10-16",
+    "ransomware": "Unknown"
+   }
   }
  ],
  "P2": [
@@ -391,7 +395,9 @@
    "exploited": "No",
    "publiclyDisclosed": "No",
    "exploitability": "Exploitation Less Likely",
-   "cwe": [],
+   "cwe": [
+    "CWE-295: Improper Certificate Validation"
+   ],
    "issuingCna": "Microsoft",
    "kev": null
   },
@@ -623,6 +629,40 @@
    "kev": null
   },
   {
+   "cve": "CVE-2026-108439",
+   "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Word",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
+   "cve": "CVE-2026-108440",
+   "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Word",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "8.8",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-121: Stack-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
    "cve": "CVE-2026-108467",
    "title": "Microsoft PostScript Printer Driver Remote Code Execution Vulnerability",
    "component": "Microsoft PostScript Printer Driver",
@@ -651,7 +691,7 @@
    "publiclyDisclosed": "No",
    "exploitability": "Exploitation Less Likely",
    "cwe": [
-    "CWE-822: Untrusted Pointer Dereference"
+    "CWE-184: Incomplete List of Disallowed Inputs"
    ],
    "issuingCna": "Microsoft",
    "kev": null
@@ -1345,6 +1385,23 @@
    "kev": null
   },
   {
+   "cve": "CVE-2026-108448",
+   "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Outlook",
+   "severity": "Critical",
+   "impact": "Remote Code Execution",
+   "baseScore": "7.5",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+   "exploited": "No",
+   "publiclyDisclosed": "No",
+   "exploitability": "Exploitation Less Likely",
+   "cwe": [
+    "CWE-122: Heap-based Buffer Overflow"
+   ],
+   "issuingCna": "Microsoft",
+   "kev": null
+  },
+  {
    "cve": "CVE-2026-69789",
    "title": "Windows Reliable Multicast Transport Driver (RMCAST) Remote Code Execution Vulnerability",
    "component": "Reliable Multicast Transport Driver (RMCAST)",
@@ -1516,14 +1573,6 @@
    "flag": "title says 'Remote Code Execution' but impact is 'Elevation of Privilege'"
   },
   {
-   "cve": "CVE-2026-108131",
-   "flag": "Critical with no CWE"
-  },
-  {
-   "cve": null,
-   "flag": "no Chrome-issued (Edge) records in this release"
-  },
-  {
    "cve": "CVE-2026-65660",
    "flag": "in CISA KEV but Microsoft exploited flag is No (earlier release)"
   }
@@ -1537,10 +1586,10 @@
   "every_cve_is_microsoft_record": true
  },
  "ok": true,
- "generated": "2026-10-13T22:04:23+00:00",
+ "generated": "2026-10-20T00:18:08+00:00",
  "kev_catalog": {
-  "version": "2026.10.13",
-  "released": "2026-10-13T16:36:26.1679Z"
+  "version": "2026.10.16",
+  "released": "2026-10-16T17:15:48.8752Z"
  },
  "previous_release": "2026-09-08T17:00:00+00:00"
 }
