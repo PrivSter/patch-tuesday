@@ -1,5 +1,11 @@
 name: tests
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  # Pre-flight: catch a broken main before the collection days (8th-21st).
+  schedule:
+    - cron: "30 6 1,7 * *"   # 06:30 UTC on the 1st and 7th
+  workflow_dispatch:
 jobs:
   test:
     runs-on: ubuntu-latest

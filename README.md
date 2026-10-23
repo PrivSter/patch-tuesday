@@ -29,8 +29,9 @@ must not be published from data with `"ok": false`.
 
 ## Automation
 
-- `tests.yml` runs the tests on every push.
-- `patch-tuesday-data.yml` collects data at 19:15 and 21:15 UTC on Patch Tuesday and
+- `tests.yml` runs the tests on every push, and on the 1st and 7th of each month
+  as a pre-flight before the collection days.
+- `patch-tuesday.yml` (workflow `patch-tuesday-data`) collects data at 19:15 and 21:15 UTC on Patch Tuesday and
   the following Tuesday, and commits it. The commit history is the audit trail.
 - The Claude scheduled task reads `data/<month>/summary.json`, reconciles the news
   sources, writes the report and PDF, and publishes them.
