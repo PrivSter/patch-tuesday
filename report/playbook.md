@@ -80,7 +80,9 @@ Fix `draft_problems` and `structural` problems (a wrong `value`, a missing sourc
 **Running the checkers.** Agent tool, subagent_type `general-purpose`, two agents launched in the same message so they run in parallel:
 - Source checker: prompt = the full text of R/report/checker-source.md with `{ROUND_DIR}` replaced by the absolute round directory.
 - Coverage checker: prompt = the full text of R/report/checker-coverage.md with `{ROUND_DIR}` replaced the same way.
-Pass them nothing else: no summary of the report, no hints about which claims you are confident in. A fresh pair every round. Skip a checker whose input is empty (`claims_to_check` or `items_to_check` is 0); if both are 0, skip the round. If an agent fails to write its verdict file, run it once more; if it fails again, leave those claims unchecked (the gate will treat them as failing) and say so in a finding.
+Pass them nothing else: no summary of the report, no hints about which claims you are confident in.
+
+*Interactive sessions only:* when Claude Code is started inside the repo, `.claude/agents/` provides `pt-source-checker` (Read, Write, WebFetch) and `pt-coverage-checker` (Read, Write), which read these same brief files. Use them there with the prompt `REPO=<absolute repo path> ROUND_DIR=<absolute round directory>`. The scheduled run starts in /home/claude and clones the repo part-way through, so Claude Code never loads those agent files; it keeps using `general-purpose` as above. A fresh pair every round. Skip a checker whose input is empty (`claims_to_check` or `items_to_check` is 0); if both are 0, skip the round. If an agent fails to write its verdict file, run it once more; if it fails again, leave those claims unchecked (the gate will treat them as failing) and say so in a finding.
 
 **Revising** (only between rounds, only for what `status` lists):
 - OVERSTATED or a coverage issue: rewrite the claim and the item's wording down to what the source actually says.
