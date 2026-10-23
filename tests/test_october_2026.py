@@ -10,7 +10,7 @@ from pathlib import Path
 from pt import triage as T
 
 FIX = Path(__file__).parent / "fixtures"
-RECORDS = json.load(gzip.open(FIX / "2026-Oct.records.json.gz", "rt"))
+RECORDS = json.load(gzip.open(FIX / "2026-Oct" / "records.json.gz", "rt"))
 KEV = json.load(gzip.open(FIX / "kev-2026.10.13-microsoft.json.gz", "rt"))
 S = T.triage(RECORDS, KEV)
 

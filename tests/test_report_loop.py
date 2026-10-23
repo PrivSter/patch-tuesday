@@ -1,6 +1,8 @@
 """Offline tests for the report loop: facts, gate (including the split rule) and renderer.
 
-Uses the committed October 2026 data and KEV fixture; no network.
+Uses the frozen October 2026 fixture (tests/fixtures/2026-Oct/, copied byte for byte
+from data/2026-Oct/ at commit e0e2266) and the KEV fixture; no network. The tests
+never read data/, so a re-collection by the bot can't change what they see.
 """
 import gzip
 import json
@@ -16,7 +18,8 @@ import gate as G  # noqa: E402
 import render as RN  # noqa: E402
 
 KEV = json.load(gzip.open(ROOT / "tests" / "fixtures" / "kev-2026.10.13-microsoft.json.gz", "rt"))
-FACTS, RC = F.build(ROOT / "data" / "2026-Oct", KEV, sha="e0e22664a6d0b2792f91a54b6eead40a19d5c1b8", offline=True)
+OCT = ROOT / "tests" / "fixtures" / "2026-Oct"
+FACTS, RC = F.build(OCT, KEV, sha="e0e22664a6d0b2792f91a54b6eead40a19d5c1b8", offline=True)
 URL = "https://example.org/bc"
 
 
@@ -43,7 +46,7 @@ def test_facts_affects_and_attack_line():
 def test_facts_kev_band_change_exit_5():
     kev = json.loads(json.dumps(KEV))
     kev["vulnerabilities"].append({"cveID": "CVE-2026-100202", "dateAdded": "2026-10-14", "dueDate": "2026-10-17"})
-    _, rc = F.build(ROOT / "data" / "2026-Oct", kev, offline=True)
+    _, rc = F.build(OCT, kev, offline=True)
     assert rc == 5
 
 
