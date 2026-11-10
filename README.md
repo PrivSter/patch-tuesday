@@ -53,6 +53,7 @@ one agent writes, two separate checker agents verify, and a script decides what 
 | `gate.py` | `prepare` / `status` / `final`. Matches every figure the writer cites to `facts.json` by script, tracks verdicts by text hash, caps the loop at three rounds, and applies the split rule. |
 | `render.py`, `page.css` | Build the page from the gate's `report.json`; nothing on the page is typed by hand. |
 | `topdf.js` | A4 landscape PDF of the page. |
+| `mailout.py` | Builds the email to Dave's CAA inbox from `report.json`, with the PDF attached by file reference (the CAA filter blocks HTML files). |
 
 **Split rule:** CVEs, bands, scores and deadlines come from Microsoft's data and are never
 dropped. Narrative that still fails after three rounds is replaced (mechanical bottom line,

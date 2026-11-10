@@ -151,3 +151,21 @@ def test_status_exit_codes(tmp_path):
     run_round(wd, lambda cid: "SUPPORTED" if cid != "c5" else "INFERENCE_OK")
     r = subprocess.run([sys.executable, str(ROOT / "report" / "gate.py"), "status", str(wd)], capture_output=True)
     assert r.returncode == 0, r.stdout.decode()
+
+
+def test_mailout_builds_email_from_report(tmp_path):
+    import hashlib
+    import mailout
+    wd = setup(tmp_path, draft())
+    run_round(wd, lambda cid: "SUPPORTED" if cid != "c5" else "INFERENCE_OK")
+    G.cmd_final(str(wd))
+    rep = json.loads((wd / "report.json").read_text())
+    pdf = tmp_path / "Patch_Tuesday_October_2026.pdf"
+    pdf.write_bytes(b"%PDF-1.4 test")
+    e = mailout.build(rep, pdf, "https://claude.ai/artifact/x")
+    assert e["to"] == ["david.privett@caa.co.uk"]
+    assert e["subject"] == "Patch Tuesday October 2026: 3 zero-days (1 exploited), 1 P1 / 20 P2"
+    assert "CVE-2026-96951" in e["body"] and "Thu 15 Oct 2026, 15:00 BST" in e["body"]
+    assert e["attachment"]["mimeType"] == "application/pdf"
+    assert e["attachment"]["content"] == f"sha256:{hashlib.sha256(pdf.read_bytes()).hexdigest()}:{pdf.resolve()}"
+    assert e["min_message_size"] > len(e["body"])

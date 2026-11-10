@@ -111,9 +111,22 @@ PDF: `cd $R/report && (node -e "require('playwright')" 2>/dev/null || npm instal
 
 Publish $W/page.html with the Artifact tool, title **"Patch Tuesday <Month YYYY>"**, icon "shield", with the PDF in `files`: `{"Patch_Tuesday_<Month>_<YYYY>.pdf": "<path>"}`. If an artifact with that title already exists for the month (a re-run), read it and publish to its url. Also send the PDF with SendUserFile (status "proactive", display "attach").
 
-## 6. Notify
+## 6. Email the report to Dave's work inbox
 
-When run by the schedule, send one push notification (PushNotification, loaded via ToolSearch) wrapped in `<routine_summary>` tags. First sentence is the phone banner, counting zero-days as the tile does, e.g. "November Patch Tuesday: 3 zero-days (1 exploited), 1 P1 / 20 P2." Then: the P1 CVEs (a few words each) and their deadline; the Cyber Essentials deadline; the loop line from report.json `verification.line`; any fallbacks or drops by name; the repo commit; the artifact link, saying the PDF is attached. The task prompt adds the "Next run" line. When Dave asked in chat, reply in chat instead.
+Every scheduled run, and in chat when Dave asks for this month's report, email the PDF to his CAA inbox (david.privett@caa.co.uk). Attach the PDF, never the HTML page: the CAA's mail filter blocks HTML files.
+
+```bash
+python3 $R/report/mailout.py $W/report.json $W/Patch_Tuesday_<Month>_<YYYY>.pdf <artifact url> > $W/email.json
+```
+Load mcp__Gmail__send_message and mcp__Gmail__get_message via ToolSearch. Call send_message with `to`, `subject` and `body` copied exactly from email.json, and `attachments` = [email.json `attachment`] as it stands: its `content` is a file reference (`sha256:<hex>:<path>`), so Gmail reads the PDF from disk. Never paste base64 into the call; hand-copied base64 has corrupted attachments in the daily brief.
+
+Then get_message on the returned id with messageFormat METADATA_ONLY. The attachment is whole only if `sizeEstimate` is at least email.json `min_message_size` (on 10 Nov 2026: 661,892 against 641,148). If it is smaller, or the send is rejected, send once more with " (resent)" added to the subject and check again. If it still fails, say so in the push notification ("Email to the CAA inbox failed: <reason>"). If no PDF could be made, send the email without an attachment and say in its first line that the PDF failed and why.
+
+If the run stops before publishing (no usable Microsoft data, `ok` false, the release isn't out, the gate or renderer crashed), send a short email instead, subject "Patch Tuesday <Month YYYY>: report not produced", saying in two or three plain sentences what failed and what happens next, so a missing report never looks like a quiet month.
+
+## 7. Notify
+
+When run by the schedule, send one push notification (PushNotification, loaded via ToolSearch) wrapped in `<routine_summary>` tags. First sentence is the phone banner, counting zero-days as the tile does, e.g. "November Patch Tuesday: 3 zero-days (1 exploited), 1 P1 / 20 P2." Then: the P1 CVEs (a few words each) and their deadline; the Cyber Essentials deadline; the loop line from report.json `verification.line`; any fallbacks or drops by name; the repo commit; the artifact link, saying the PDF is attached; and whether the email to the CAA inbox went and passed its size check. The task prompt adds the "Next run" line. When Dave asked in chat, reply in chat instead.
 
 ## Change check (on request only)
 
@@ -124,4 +137,4 @@ When run by the schedule, send one push notification (PushNotification, loaded v
 
 ## Failure
 
-If a news source can't be reached, write no items for it, add a finding saying so, and carry on. Microsoft data is essential: if facts.py can't produce facts with `ok` true, say so and stop; don't build the report from news coverage alone. If the gate or renderer crashes, report the error and stop rather than writing the page by hand.
+If a news source can't be reached, write no items for it, add a finding saying so, and carry on. Microsoft data is essential: if facts.py can't produce facts with `ok` true, say so and stop; don't build the report from news coverage alone. If the gate or renderer crashes, report the error and stop rather than writing the page by hand. In every stop case, send the "report not produced" email (step 6) as well as the push notification.
