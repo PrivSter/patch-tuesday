@@ -52,6 +52,8 @@ def main(argv=None) -> int:
     ap.add_argument("--out", default="data")
     ap.add_argument("--offline", help="records .json.gz instead of fetching")
     ap.add_argument("--kev", help="KEV .json(.gz) instead of fetching")
+    ap.add_argument("--allow-off-cycle", action="store_true",
+                    help="accept a main release date that isn't the month's second Tuesday")
     a = ap.parse_args(argv)
 
     if a.offline:
@@ -69,9 +71,18 @@ def main(argv=None) -> int:
         kev = fetch.kev()
 
     try:
-        T.release_time(records)
+        rel = T.release_time(records)
     except ValueError as e:
         print(f"release not out: {e}", file=sys.stderr)
+        return 3
+    # Records published earlier in the month (Chrome, third-party, the odd early
+    # Microsoft fix) exist before Patch Tuesday. On 10 Nov 2026 a delayed Monday
+    # run collected those at 02:08 UTC and took 4 Nov as "the release". The main
+    # release always lands on the second Tuesday, so anything else is not out yet.
+    pt_day = second_tuesday(int(a.month[:4]), MON.index(a.month[5:]) + 1)
+    if rel.astimezone(ZoneInfo("America/Los_Angeles")).date() != pt_day and not a.allow_off_cycle:
+        print(f"release not out: main release date {rel.date()} is not Patch Tuesday {pt_day} "
+              "(only early-month records so far)", file=sys.stderr)
         return 3
 
     prev = previous_release(a.month)

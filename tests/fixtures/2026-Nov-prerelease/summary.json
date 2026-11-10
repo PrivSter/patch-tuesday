@@ -1,0 +1,91 @@
+{
+ "month": "2026-Nov",
+ "release": "2026-11-04T16:00:00+00:00",
+ "release_uk": "Wed 4 Nov 2026, 16:00 GMT",
+ "deadlines": {
+  "P1": {
+   "utc": "2026-11-06T16:00:00+00:00",
+   "uk": "Fri 6 Nov 2026, 16:00 GMT"
+  },
+  "P1_internet": {
+   "utc": "2026-11-05T16:00:00+00:00",
+   "uk": "Thu 5 Nov 2026, 16:00 GMT"
+  },
+  "P2": {
+   "utc": "2026-11-11T16:00:00+00:00",
+   "uk": "Wed 11 Nov 2026, 16:00 GMT"
+  },
+  "P2_internet": {
+   "utc": "2026-11-09T16:00:00+00:00",
+   "uk": "Mon 9 Nov 2026, 16:00 GMT"
+  },
+  "P3": {
+   "utc": "2026-11-18T16:00:00+00:00",
+   "uk": "Wed 18 Nov 2026, 16:00 GMT"
+  },
+  "P4": {
+   "utc": "2026-11-18T16:00:00+00:00",
+   "uk": "Wed 18 Nov 2026, 16:00 GMT"
+  },
+  "cyber_essentials": {
+   "utc": "2026-11-18T16:00:00+00:00",
+   "uk": "Wed 18 Nov 2026, 16:00 GMT"
+  }
+ },
+ "counts": {
+  "all": 134,
+  "microsoft": 2,
+  "microsoft_install_needed": 1,
+  "chrome": 24,
+  "other_organisations": 108,
+  "customer_action": 133,
+  "critical_customer_action": 0,
+  "zero_days": 0,
+  "publicly_disclosed": 0,
+  "kev_listed": 0,
+  "P1": 0,
+  "P2": 0,
+  "P3": 0,
+  "P4": 133,
+  "P4_by_severity": {
+   "Moderate": 1,
+   "unrated": 132
+  },
+  "P3_preauth_high_complexity": 0
+ },
+ "P1": [],
+ "P2": [],
+ "P3": [],
+ "disclosed": [],
+ "exploited": [],
+ "carryover": [
+  {
+   "cve": "CVE-2026-96951",
+   "title": "Windows Shell Security Feature Bypass Vulnerability",
+   "release": "2026-Oct",
+   "baseScore": "8.8",
+   "microsoft_exploited": "Yes",
+   "kev_added": "2026-10-13",
+   "kev_due": "2026-10-16",
+   "ransomware": "Unknown",
+   "cyber_essentials_due": "2026-10-27T14:00:00+00:00",
+   "overdue": true
+  }
+ ],
+ "flags": [],
+ "checks": {
+  "bands_disjoint": true,
+  "criticals_accounted": true,
+  "action_accounted": true,
+  "p4_breakdown_sums": true,
+  "split_sums": true,
+  "every_cve_is_microsoft_record": true
+ },
+ "ok": true,
+ "generated": "2026-11-10T03:31:19+00:00",
+ "kev_catalog": {
+  "version": "2026.11.09",
+  "released": "2026-11-09T19:54:37.4945Z"
+ },
+ "previous_release": "2026-10-13T17:00:00+00:00"
+}

@@ -14,7 +14,9 @@ may only cite them as `data` claims, which the gate checks against this file.
 
 Exit codes: 0 ok; 4 data not usable (missing file, ok false, wrong month);
 5 the fresh KEV catalogue moves a CVE into P1 that the repo data doesn't have
-there - re-run the collector (python3 -m pt.cli) and build facts from its output.
+there - re-run the collector (python3 -m pt.cli) and build facts from its output;
+6 the data's release date isn't the month's Patch Tuesday (collected before the
+main release) - collect with python3 -m pt.cli and build facts from its output.
 """
 from __future__ import annotations
 
@@ -203,6 +205,16 @@ def live_check(row: dict) -> dict:
 
 # ---------------------------------------------------------------- main
 
+def _is_patch_tuesday(month: str, release_iso: str) -> bool:
+    from datetime import date, timedelta
+    from zoneinfo import ZoneInfo
+    y, m = int(month[:4]), list(MONTHS).index(month[5:]) + 1
+    f = date(y, m, 1)
+    pt_day = f + timedelta(days=(1 - f.weekday()) % 7 + 7)
+    rel = datetime.fromisoformat(release_iso).astimezone(ZoneInfo("America/Los_Angeles")).date()
+    return rel == pt_day
+
+
 def build(data: Path, kev: dict, sha: str = "", offline: bool = False) -> tuple[dict, int]:
     s = json.load(open(data / "summary.json", encoding="utf-8"))
     products = json.load(open(data / "products.json", encoding="utf-8"))
@@ -336,6 +348,10 @@ def build(data: Path, kev: dict, sha: str = "", offline: bool = False) -> tuple[
     }
     if not facts["ok"]:
         return facts, 4
+    if not _is_patch_tuesday(month, s["release"]):
+        facts["stale_reason"] = (f"summary.json release {s['release'][:10]} is not {month}'s Patch Tuesday: "
+                                 "the data was collected before Microsoft's main release")
+        return facts, 6
     if band_change:
         return facts, 5
     return facts, 0
@@ -368,6 +384,8 @@ def main(argv=None) -> int:
                       "kev_band_change": facts["kev_band_change"],
                       "failed_checks": [k for k, v in facts["checks"].items() if not v],
                       "p1_live": {r["cve"]: r["live"]["note"] for r in facts["P1"]}, "out": str(a.out)}))
+    if rc == 6:
+        print("STALE DATA: " + facts["stale_reason"] + " - collect with python3 -m pt.cli and rebuild facts")
     if rc == 5:
         print("KEV MOVES CVEs INTO P1: " + ", ".join(facts["kev_band_change"]) + " - re-run the collector and rebuild facts")
     return rc
