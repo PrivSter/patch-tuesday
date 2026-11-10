@@ -87,7 +87,7 @@ thead{display:table-header-group}
 tr,.stat,.due div,.bottom,.ce,li{break-inside:avoid}
 .card{break-inside:auto}
 .card header{break-after:avoid}
-.card dt{break-after:avoid}
+.card dt{break-inside:avoid}
 .card dd{break-inside:avoid}
 .req{white-space:nowrap}
 .tbl{border:0}

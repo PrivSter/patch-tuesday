@@ -31,6 +31,8 @@ Read facts.json. It is your only source for anything about the release itself.
 
 **BleepingComputer.** WebSearch (mode "extended" if "standard" doesn't find it) for `bleepingcomputer Microsoft <Month YYYY> Patch Tuesday`, then WebFetch the article and read it to the end. You need: its headline CVE count, its Critical count, what it says the total excludes, each zero-day it names and whether it calls it exploited or publicly disclosed, its definition of a zero-day, who it credits or attributes for each P1, and any end-of-support statement.
 
+If the article page returns a server error, fetch its AMP copy (the same URL with `amp/` appended, e.g. `.../microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/amp/`) and cite that URL; on 10 Nov 2026 the main page failed three times while the AMP copy loaded.
+
 **One second source**: Tenable, ZDI (Zero Day Initiative) monthly review, SANS ISC, Rapid7 or Help Net Security. Take its CVE count, Critical count and zero-day list only. The SANS ISC diary is at `isc.sans.edu/diary/<id>`; find it by WebSearch. If no article is out yet, retry once; if still none, write no item for it and add a finding saying so.
 
 Ask every fetch for exact sentences, not summaries. Only use URLs you actually retrieved this run.

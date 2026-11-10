@@ -56,9 +56,12 @@ def render(rep: dict) -> str:
     w(f'<span class="eyebrow">Microsoft security release · {E(f["release_uk"])}</span>')
     w(f"<h1>Patch Tuesday {E(month_name)}</h1>")
     data_link = a(f["data_url"], f"commit {f['sha7']}, collected {f['generated'][:19].replace('T', ' ')} UTC") if f.get("data_url") else E(f"collected {f['generated']}")
+    src_txt = (f"Built from the patch-tuesday repo data ({data_link})" if f.get("data_url") else
+               f"Data collected by this run with the repo's collector ({E(f['generated'][:16].replace('T', ' '))} UTC), "
+               "because the repo's copy was missing or collected before the release")
     tool = f" (tooling {E(rep['tooling_sha'][:7])})" if rep.get("tooling_sha") else ""
     w(f'<p class="meta"><a class="pdf" href="{E(pdf)}" target="_blank" rel="noopener">PDF version (A4) · </a>'
-      f"Built from the patch-tuesday repo data ({data_link}) · KEV catalogue {E(kev_txt)} · "
+      f"{src_txt} · KEV catalogue {E(kev_txt)} · "
       f"news checked against {E(news)} · checked by the writer/checker loop{tool}</p></header>")
 
     # Verification box
@@ -136,6 +139,7 @@ def render(rep: dict) -> str:
     else:
         w('<p class="note">The NCSC table formally applies to KEV-listed flaws exploited in business-critical systems. '
           "This report applies it to Microsoft-exploited CVEs too.</p>")
+    ng = lambda x: "not given" if x in (None, "") else x  # noqa: E731
     for r in f["P1"]:
         k = r.get("kev")
         kev_s = (f"Added {k['dateAdded']}, CISA due {k['dueDate']}, known ransomware use: {k.get('ransomware')}"
@@ -145,9 +149,9 @@ def render(rep: dict) -> str:
         live_s = {True: '<span class="okc">Matches</span> Microsoft\'s live record', False: '<span class="unv">Differs</span> from Microsoft\'s live record: '}.get(live.get("ok"), '<span class="unv">Not re-checked</span>: ')
         live_s += "" if live.get("ok") else E(live.get("note"))
         cr = rep["credits"].get(r["cve"], {"text": "No verified credit or attribution this run.", "verified": False})
-        fields = [("Component", E(r.get("component"))), ("Severity / impact", f"{E(r.get('severity'))} · {E(r.get('impact'))}"),
+        fields = [("Component", E(r.get("component"))), ("Severity / impact", f"{E(ng(r.get('severity')))} · {E(ng(r.get('impact')))}"),
                   ("CVSS", f"<b>{E(r.get('baseScore'))}</b> <span class=\"mono small\">{E(r.get('vector'))}</span>"),
-                  ("Microsoft", f"Exploited: {E(r.get('exploited'))} · Publicly disclosed: {E(r.get('publiclyDisclosed'))} · {E(r.get('exploitability'))}"),
+                  ("Microsoft", f"Exploited: {E(ng(r.get('exploited')))} · Publicly disclosed: {E(ng(r.get('publiclyDisclosed')))} · Exploitability: {E(ng(r.get('exploitability')))}"),
                   ("Live re-check", live_s),
                   ("Deadline", f"<span class=\"req\">{E(d['P1']['uk'])}</span> (48 h) · internet-facing and automatable: "
                                f"<span class=\"req\">{E(d['P1_internet']['uk'])}</span> (24 h). Investigate for compromise as well as patching."),
@@ -158,7 +162,13 @@ def render(rep: dict) -> str:
                   ("Credit / attribution", ("" if cr["verified"] else '<span class="unv">') + E(cr["text"]) + ("" if cr["verified"] else "</span>")
                    + (' <span class="small note">(secondary reporting)</span>' if cr["verified"] else ""))]
         dl = "".join(f"<dt>{E(k_)}</dt><dd>{v_}</dd>" for k_, v_ in fields)
-        w(f'<article class="card"><header><span class="band b1">P1</span><h3>{cve_link(r["cve"])} {E(r.get("title"))}</h3></header><dl>{dl}</dl></article>')
+        title = r.get("title") or ""
+        if len(title) > 110:  # other organisations' records carry a description as the title
+            heading = f"{r.get('component') or 'Third-party'} record issued by {r.get('issuingCna') or 'another organisation'}"
+            dl = f"<dt>Description</dt><dd>{E(title)}</dd>" + dl
+        else:
+            heading = title
+        w(f'<article class="card"><header><span class="band b1">P1</span><h3>{cve_link(r["cve"])} {E(heading)}</h3></header><dl>{dl}</dl></article>')
     w("</section>")
 
     # P2
