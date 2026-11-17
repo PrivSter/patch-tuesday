@@ -1,1 +1,2146 @@
-{}
+{
+ "CVE-2026-125350": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "productFamily": "Browser",
+   "productStatus": "fixed",
+   "severity": null,
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "Release Notes",
+     "fixedBuildNumber": "157.0.4341.46",
+     "rebootRequired": "No"
+    },
+    {
+     "articleName": "Release Notes",
+     "fixedBuildNumber": "156.0.4314.80",
+     "rebootRequired": "No"
+    }
+   ]
+  }
+ ],
+ "CVE-2026-123158": [],
+ "CVE-2026-124194": [
+  {
+   "product": "Microsoft 365 Apps for Enterprise for 32-bit Systems",
+   "productFamily": "Microsoft Office",
+   "productStatus": "fixed",
+   "severity": "Moderate",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "Release Notes",
+     "fixedBuildNumber": "https://aka.ms/OfficeSecurityReleases",
+     "rebootRequired": null
+    }
+   ]
+  },
+  {
+   "product": "Microsoft 365 Apps for Enterprise for 64-bit Systems",
+   "productFamily": "Microsoft Office",
+   "productStatus": "fixed",
+   "severity": "Moderate",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "Release Notes",
+     "fixedBuildNumber": "https://aka.ms/OfficeSecurityReleases",
+     "rebootRequired": null
+    }
+   ]
+  },
+  {
+   "product": "Microsoft Office LTSC 2024 for 32-bit editions",
+   "productFamily": "Microsoft Office",
+   "productStatus": "fixed",
+   "severity": "Moderate",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "Release Notes",
+     "fixedBuildNumber": "16.0.17932.21140",
+     "rebootRequired": null
+    }
+   ]
+  },
+  {
+   "product": "Microsoft Office LTSC 2024 for 64-bit editions",
+   "productFamily": "Microsoft Office",
+   "productStatus": "fixed",
+   "severity": "Moderate",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "Release Notes",
+     "fixedBuildNumber": "16.0.17932.21140",
+     "rebootRequired": null
+    }
+   ]
+  },
+  {
+   "product": "Microsoft Office LTSC 2021 for 32-bit editions",
+   "productFamily": "Microsoft Office",
+   "productStatus": "fixed",
+   "severity": "Moderate",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "Release Notes",
+     "fixedBuildNumber": "16.0.14334.21048",
+     "rebootRequired": null
+    }
+   ]
+  },
+  {
+   "product": "Microsoft Office LTSC 2021 for 64-bit editions",
+   "productFamily": "Microsoft Office",
+   "productStatus": "fixed",
+   "severity": "Moderate",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "Release Notes",
+     "fixedBuildNumber": "16.0.14334.21048",
+     "rebootRequired": null
+    }
+   ]
+  }
+ ],
+ "CVE-2017-7494": [
+  {
+   "product": "azl4 samba 2:4.23.13-3.azl4",
+   "productFamily": "Open Source Software",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "Release Notes",
+     "fixedBuildNumber": "2:4.23.13-3.azl4",
+     "rebootRequired": null
+    }
+   ]
+  }
+ ],
+ "CVE-2026-112967": [
+  {
+   "product": "Windows 10 Version 22H2 for 32-bit Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19045.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 26H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26300.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26300.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 25H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26200.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26200.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 25H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26200.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26200.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 24H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26100.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26100.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 version 26H1 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132059",
+     "fixedBuildNumber": "10.0.28000.3501",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 26H1 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132059",
+     "fixedBuildNumber": "10.0.28000.3501",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 24H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26100.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26100.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 26H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26300.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26300.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 23H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131087",
+     "fixedBuildNumber": "10.0.22631.7711",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 23H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131087",
+     "fixedBuildNumber": "10.0.22631.7711",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 22H2 for x64-based Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19045.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 22H2 for ARM64-based Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19045.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 21H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19044.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 21H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19044.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 21H2 for 32-bit Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19044.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1809 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1809 for 32-bit Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  }
+ ],
+ "CVE-2026-116928": [
+  {
+   "product": "Windows Server 2016 (Server Core installation)",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131291",
+     "fixedBuildNumber": "10.0.14393.9688",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2016",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131291",
+     "fixedBuildNumber": "10.0.14393.9688",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1607 for 32-bit Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131291",
+     "fixedBuildNumber": "10.0.14393.9688",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 26H1 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132059",
+     "fixedBuildNumber": "10.0.28000.3501",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1607 for x64-based Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131291",
+     "fixedBuildNumber": "10.0.14393.9688",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 version 26H1 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132059",
+     "fixedBuildNumber": "10.0.28000.3501",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2025",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131080",
+     "fixedBuildNumber": "10.0.26100.33822",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5131077",
+     "fixedBuildNumber": "10.0.26100.33730",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 24H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26100.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26100.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 24H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26100.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26100.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 23H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131087",
+     "fixedBuildNumber": "10.0.22631.7711",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 25H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26200.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26200.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 23H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131087",
+     "fixedBuildNumber": "10.0.22631.7711",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 25H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26200.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26200.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2025 (Server Core installation)",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131080",
+     "fixedBuildNumber": "10.0.26100.33822",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5131077",
+     "fixedBuildNumber": "10.0.26100.33730",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 22H2 for 32-bit Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19045.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 22H2 for x64-based Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19045.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 22H2 for ARM64-based Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19045.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 21H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19044.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 21H2 for 32-bit Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19044.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 21H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19044.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2022 (Server Core installation)",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131090",
+     "fixedBuildNumber": "10.0.20348.5870",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2022",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131090",
+     "fixedBuildNumber": "10.0.20348.5870",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2019",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2019 (Server Core installation)",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1809 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1809 for 32-bit Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 26H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26300.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26300.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 26H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26300.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26300.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  }
+ ],
+ "CVE-2026-119958": [
+  {
+   "product": "Windows 11 version 26H1 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132059",
+     "fixedBuildNumber": "10.0.28000.3501",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 26H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26300.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26300.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2022 (Server Core installation)",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131090",
+     "fixedBuildNumber": "10.0.20348.5870",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 25H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26200.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26200.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 25H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26200.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26200.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 26H1 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132059",
+     "fixedBuildNumber": "10.0.28000.3501",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2025 (Server Core installation)",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131080",
+     "fixedBuildNumber": "10.0.26100.33822",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5131077",
+     "fixedBuildNumber": "10.0.26100.33730",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2025",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131080",
+     "fixedBuildNumber": "10.0.26100.33822",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5131077",
+     "fixedBuildNumber": "10.0.26100.33730",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 26H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26300.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26300.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 24H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26100.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26100.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 24H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26100.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26100.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 23H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131087",
+     "fixedBuildNumber": "10.0.22631.7711",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 23H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131087",
+     "fixedBuildNumber": "10.0.22631.7711",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2022",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131090",
+     "fixedBuildNumber": "10.0.20348.5870",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 22H2 for ARM64-based Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19045.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 22H2 for x64-based Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19045.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 22H2 for 32-bit Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19045.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 21H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19044.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 21H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19044.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2019 (Server Core installation)",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 21H2 for 32-bit Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19044.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2019",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1809 for 32-bit Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1809 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2016 (Server Core installation)",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131291",
+     "fixedBuildNumber": "10.0.14393.9688",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2016",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131291",
+     "fixedBuildNumber": "10.0.14393.9688",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1607 for x64-based Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131291",
+     "fixedBuildNumber": "10.0.14393.9688",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1607 for 32-bit Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131291",
+     "fixedBuildNumber": "10.0.14393.9688",
+     "rebootRequired": "Yes"
+    }
+   ]
+  }
+ ],
+ "CVE-2026-113862": [
+  {
+   "product": "Windows 11 Version 26H1 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132059",
+     "fixedBuildNumber": "10.0.28000.3501",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 version 26H1 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132059",
+     "fixedBuildNumber": "10.0.28000.3501",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2025 (Server Core installation)",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131080",
+     "fixedBuildNumber": "10.0.26100.33822",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5131077",
+     "fixedBuildNumber": "10.0.26100.33730",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2025",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131080",
+     "fixedBuildNumber": "10.0.26100.33822",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5131077",
+     "fixedBuildNumber": "10.0.26100.33730",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 26H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26300.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26300.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 26H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26300.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26300.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 25H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26200.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26200.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 25H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26200.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26200.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 24H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26100.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26100.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 24H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26100.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26100.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 23H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131087",
+     "fixedBuildNumber": "10.0.22631.7711",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 23H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131087",
+     "fixedBuildNumber": "10.0.22631.7711",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2022 (Server Core installation)",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131090",
+     "fixedBuildNumber": "10.0.20348.5870",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2022",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131090",
+     "fixedBuildNumber": "10.0.20348.5870",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 22H2 for ARM64-based Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19045.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 22H2 for x64-based Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19045.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 22H2 for 32-bit Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19045.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 21H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19044.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 21H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19044.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 21H2 for 32-bit Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19044.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2019 (Server Core installation)",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2019",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1809 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1809 for 32-bit Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2016 (Server Core installation)",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131291",
+     "fixedBuildNumber": "10.0.14393.9688",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2016",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131291",
+     "fixedBuildNumber": "10.0.14393.9688",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1607 for x64-based Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131291",
+     "fixedBuildNumber": "10.0.14393.9688",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1607 for 32-bit Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131291",
+     "fixedBuildNumber": "10.0.14393.9688",
+     "rebootRequired": "Yes"
+    }
+   ]
+  }
+ ],
+ "CVE-2026-119952": [
+  {
+   "product": "Windows Server 2022 (Server Core installation)",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131090",
+     "fixedBuildNumber": "10.0.20348.5870",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 21H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19044.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1809 for 32-bit Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 24H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26100.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26100.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2019 (Server Core installation)",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 25H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26200.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26200.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2019",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 version 26H1 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132059",
+     "fixedBuildNumber": "10.0.28000.3501",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2025 (Server Core installation)",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131080",
+     "fixedBuildNumber": "10.0.26100.33822",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5131077",
+     "fixedBuildNumber": "10.0.26100.33730",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 26H1 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132059",
+     "fixedBuildNumber": "10.0.28000.3501",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 26H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26300.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26300.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2025",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131080",
+     "fixedBuildNumber": "10.0.26100.33822",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5131077",
+     "fixedBuildNumber": "10.0.26100.33730",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 26H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26300.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26300.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 25H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26200.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26200.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 24H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5132061",
+     "fixedBuildNumber": "10.0.26100.9974",
+     "rebootRequired": "Yes"
+    },
+    {
+     "articleName": "5132043",
+     "fixedBuildNumber": "10.0.26100.9911",
+     "rebootRequired": "No"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 23H2 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131087",
+     "fixedBuildNumber": "10.0.22631.7711",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 11 Version 23H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131087",
+     "fixedBuildNumber": "10.0.22631.7711",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2022",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131090",
+     "fixedBuildNumber": "10.0.20348.5870",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 22H2 for ARM64-based Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19045.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 22H2 for x64-based Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19045.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 22H2 for 32-bit Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19045.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 21H2 for ARM64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19044.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 21H2 for 32-bit Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131096",
+     "fixedBuildNumber": "10.0.19044.7846",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1809 for x64-based Systems",
+   "productFamily": "Windows",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131085",
+     "fixedBuildNumber": "10.0.17763.9487",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2016 (Server Core installation)",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131291",
+     "fixedBuildNumber": "10.0.14393.9688",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1607 for x64-based Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131291",
+     "fixedBuildNumber": "10.0.14393.9688",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows Server 2016",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131291",
+     "fixedBuildNumber": "10.0.14393.9688",
+     "rebootRequired": "Yes"
+    }
+   ]
+  },
+  {
+   "product": "Windows 10 Version 1607 for 32-bit Systems",
+   "productFamily": "ESU",
+   "productStatus": "fixed",
+   "severity": "Critical",
+   "releaseNumber": "2026-Nov",
+   "kbArticles": [
+    {
+     "articleName": "5131291",
+     "fixedBuildNumber": "10.0.14393.9688",
+     "rebootRequired": "Yes"
+    }
+   ]
+  }
+ ]
+}
